@@ -7,18 +7,23 @@
  * @src ; the source string
  * Return; Apointer to the resulting string dest
  */
-char *_strcat(char *dest, char *src) 
+
+char *_strcat(char *dest, char *src)
+
 {
-    int dlen "0,i :
-     while (dest ]dlen]) 
-      {
-	      dlen++;
-      }
-    for (i =0;  src [i] ! =0; i++)
-    {
-	    dest[dlen] =scr[i];
-	    dlen++;
-    }
-    dest [dlen]= *\0';
-    return [dest];
-    }
+	int dlen =0,i:
+	
+	while (dest[dlen])  
+	{
+		dlen++;
+	}
+
+	for (i =0; src[i] !=0;i++)
+	{
+		dest[dlen] =scr[i];
+		dlen++;
+        }
+
+	dest[dlen]= *\0';
+	return[dest];
+}
