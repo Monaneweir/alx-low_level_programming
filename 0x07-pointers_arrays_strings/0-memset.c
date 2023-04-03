@@ -7,11 +7,12 @@
 * @n: input
 * Return: Always 0(Success) 
 */
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b,unsigned int n)
 {
-     
-	unsigned int i;
-	for (i=0;i < n;i++) 
-	dest [i]=src [i];
-	    return (dest);
+	unsigned itr;
+	for(itr=0; n> 0;itr++ n--)  
+	 {
+		 s[itr]=0;
+		 }
+	return[s];
 }
