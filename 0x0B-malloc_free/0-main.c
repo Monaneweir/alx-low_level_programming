@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,9 +6,9 @@ include "main.h"
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
- *
  * Return: Nothing.
  */
+
 void simple_print_buffer(char *buffer, unsigned int size)
 {
 unsigned int i;
@@ -32,9 +32,9 @@ printf("\n");
 
 /**
  * main - check the code for ALX School students.
- *
  * Return: Always 0.
  */
+
 int main(void)
 {
 char *buffer;
