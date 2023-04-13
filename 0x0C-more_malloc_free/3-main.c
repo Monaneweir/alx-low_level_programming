@@ -7,7 +7,6 @@
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
- *
  * Return: Nothing.
  */
 void simple_print_buffer(int *buffer, unsigned int size)
@@ -33,7 +32,6 @@ printf("\n");
 
 /**
  * main - check the code
- *
  * Return: Always 0.
  */
 int main(void)
