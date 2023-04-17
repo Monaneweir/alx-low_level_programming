@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - print name of of this source file
- *
- * Return: Always 0.
+ * main -prints the name of the file it was compiled from
+ * Return Always 0.
  */
-int main (void) 
+
+int main(void)
 {
-	print("%s\n" , _ FIlE _ );
+	print("%s\n", _BASE_FILE_);
 	return (0);
 }
+
