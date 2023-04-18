@@ -1,11 +1,9 @@
-include <stdlib.h>
+#include <stdio.h>
 #include "dog.h"
 
 /**
  * _strlen - calculate length of a string
- *
  * @string: string to evaluate
- *
  * Return: length
  */
 int _strlen(char *string)
@@ -21,10 +19,8 @@ int _strlen(char *string)
 
 /**
  * *_strcpy - copies the string
- *
  * @dest: pointer to the buffer we use to save our string
  * @src: string we will take copy from it
- *
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
@@ -45,11 +41,9 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * new_dog - creates a new dog
- *
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
- *
  * Return: dog or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
