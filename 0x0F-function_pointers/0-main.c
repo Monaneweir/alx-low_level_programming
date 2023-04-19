@@ -18,7 +18,7 @@ printf("Hello, my name is %s\n", name);
  */
 void print_name_uppercase(char *name)
 {
-  unsigned int i;
+unsigned int i;
 printf("Hello, my uppercase name is ");
 i = 0;
 while (name[i])
@@ -32,9 +32,8 @@ else
 putchar(name[i]);
 }
 i++;
-    
-}
 
+}
 /**
  * main - check the code
  * Return: Always 0.
