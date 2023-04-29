@@ -1,23 +1,32 @@
-#include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * print_listint - Print elements of a singly linked list.
- * @h: Pointer to a list.
- * Return: Integer.
- **/
-
-size_t print_listint(const listint_t *h)
+ * main - check the code
+ * 
+ * Return: Always 0.
+ */
+int main(void)
 {
-size_t counter = 0;
+listint_t *head;
+listint_t *new;
+listint_t hello = {8, NULL};
+size_t n;
 
-if (!h)
-return (0);
-while (h)
+head = &hello;
+new = malloc(sizeof(listint_t));
+if (new == NULL)
 {
-printf("%d\n", h->n);
-h = h->next;
-counter++;
+printf("Error\n");
+return (1);
 }
-return (counter);
+new->n = 9;
+new->next = head;
+head = new;
+n = print_listint(head);
+printf("-> %lu elements\n", n);
+free(new);
+return (0);
 }
