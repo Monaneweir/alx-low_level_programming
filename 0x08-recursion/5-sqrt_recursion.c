@@ -1,48 +1,31 @@
 #include "main.h"
 
 /**
-
- * _strstr - Entry point
-
- * @haystack: input
-
- * @needle: input
-
- * Return: Always 0 (Success)
-
+ * _sqrt_recursion - find natural square root
+ * @n: int
+ * Return: int
  */
 
-char *_strstr(char *haystack, char *needle)
+int _sqrt_recursion(int n)
+{
+	return (square(n, 1));
+}
 
+/**
+ * square - find square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
+ */
+
+int square(int n, int val)
 {
 
-        for (; *haystack != '\0'; haystack++)
-
-        {
-
-                char *l = haystack;
-
-                char *p = needle;
-
-
-                while (*l == *p && *p != '\0')
-
-                {
-
-                        l++;
-
-                        p++;
-
-                }
-
-
-                if (*p == '\0')
-
-                        return (haystack);
-
-        }
-
-
-        return (0);
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return  (square(n, val + 1));
+	else
+		return (-1);
 
 }
